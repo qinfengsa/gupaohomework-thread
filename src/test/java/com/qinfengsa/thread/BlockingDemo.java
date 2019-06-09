@@ -1,6 +1,6 @@
 package com.qinfengsa.thread;
 
-import com.qinfengsa.thread.queue.BlockingQueue;
+import com.qinfengsa.thread.queue.MyBlockingQueue;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Iterator;
@@ -14,7 +14,7 @@ public class BlockingDemo {
 
     static volatile boolean isFlag = false;
 
-    BlockingQueue<String> ab = new BlockingQueue(10);// 阻塞队列
+    MyBlockingQueue<String> ab = new MyBlockingQueue(10);// 阻塞队列
     /*{
         init(); //构造块初始化
     }*/

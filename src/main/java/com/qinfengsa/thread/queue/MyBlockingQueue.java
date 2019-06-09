@@ -15,7 +15,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * @date: 2019/5/21 10:42
  */
 @Slf4j
-public class BlockingQueue<E> implements Serializable {
+public class MyBlockingQueue<E> implements Serializable {
 
     /**
      * 序列化
@@ -73,7 +73,7 @@ public class BlockingQueue<E> implements Serializable {
      * 构造方法
      * @param capacity 队列容量
      */
-    public BlockingQueue(int capacity) {
+    public MyBlockingQueue(int capacity) {
         this.capacity = capacity;
         this.head = new Node<>();
         this.tail = head;
@@ -82,7 +82,7 @@ public class BlockingQueue<E> implements Serializable {
     /**
      * 构造方法
      */
-    public BlockingQueue() {
+    public MyBlockingQueue() {
         this(DEFULT_SIZE);
     }
 
